@@ -109,6 +109,14 @@ body {
     @apply bg-background text-foreground;
   }
 }
+@layer components {
+  .radial--gradient--pink {
+    background: radial-gradient(circle, #ff69b4 0%, #d63384 100%);
+    padding: 1rem;
+    border-radius: 10px;
+    color: white;
+  }
+}
 
 .text-vivid{
   background: linear-gradient(180deg, #F55C7A 0%, #F6BC66 100%);
@@ -117,3 +125,18 @@ body {
   -webkit-text-fill-color: transparent;
 }
 
+.container {
+  width:100%;
+  margin-left:auto;
+  margin-right:auto;
+  padding-right:2rem;
+  padding-left:2re;
+}
+
+
+
+@media (min-width: 1400px) {
+  .container {
+    max-width: 1400px;
+  }
+}
